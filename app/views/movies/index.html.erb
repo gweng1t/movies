@@ -1,5 +1,6 @@
 <h1>View de la méthode INDEX</h1>
 
 <% @movies.each do |movie| %>
-    <p><%= movie.title %>, réalisé par <%= movie.director %>, sorti en <%= movie.release_year %></p>
+    <p><%= movie.title %>, réalisé par <%= movie.director.last_name + ' ' + movie.director.first_name %>, sorti en <%= movie.release_year %></p>
 <% end %>
+
